@@ -1,0 +1,8 @@
+# Tabla de desarrollo standalone: la que usa "idf.py flash".
+# El tamano de factory esta puesto a proposito para que el size-check del build
+# sirva tambien de cota si la app se arranca desde una particion OTA.
+# Name,     Type, SubType, Offset,  Size
+nvs,        data, nvs,     0x9000,  0x5000
+otadata,    data, ota,     0xe000,  0x2000
+factory,    app,  factory, 0x10000, 0x700000
+coredump,   data, coredump, 0x710000, 0x10000

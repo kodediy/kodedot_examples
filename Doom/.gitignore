@@ -1,0 +1,12 @@
+# El IWAD NO se versiona: doom1.wad son 4,2 MB y, aunque el shareware es
+# redistribuible integro y gratis, no tiene sentido en un repo de codigo.
+# Se descarga aparte y se copia a main/ antes de compilar (ver README).
+wads/
+main/doom1.wad
+
+# Artefactos de ESP-IDF
+build/
+managed_components/
+sdkconfig
+sdkconfig.old
+.DS_Store
